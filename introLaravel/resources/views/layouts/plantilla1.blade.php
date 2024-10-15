@@ -23,10 +23,10 @@
         <ul class="navbar-nav">
           
             <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="{{ route('rutaformulario') }}">Registro Clientes </a>
+            <a class="nav-link {{ request()->routeIs('rutaformulario')?'text-warning':'' }}" aria-current="page" href="{{ route('rutaformulario') }}">Registro Clientes </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('rutaclientes') }}">Consulta Clientes </a>
+            <a class="nav-link {{ request()->routeIs('rutaclientes')?'text-primary':'' }}" href="{{ route('rutaclientes') }}">Consulta Clientes </a>
           </li>
           
         </ul>
